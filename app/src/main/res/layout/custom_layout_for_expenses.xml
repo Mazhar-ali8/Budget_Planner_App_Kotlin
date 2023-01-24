@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Input All Your Incomes :"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/spacing_20dp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/spacing_10dp">
+
+            <ImageView
+                android:layout_width="@dimen/spacing_50dp"
+                android:layout_height="@dimen/spacing_50dp"
+                android:background="@drawable/clothes_rack"
+                android:textColor="@color/red" />
+
+            <EditText
+                android:id="@+id/clothes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/spacing_25dp"
+                android:hint="Clothes"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/spacing_10dp">
+
+            <ImageView
+                android:layout_width="@dimen/spacing_50dp"
+                android:layout_height="@dimen/spacing_50dp"
+                android:background="@drawable/diet"
+                android:textColor="@color/red" />
+
+            <EditText
+                android:id="@+id/eating_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/spacing_25dp"
+                android:hint="Eating Out"></EditText>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/spacing_10dp">
+
+            <ImageView
+                android:layout_width="@dimen/spacing_50dp"
+                android:layout_height="@dimen/spacing_50dp"
+                android:background="@drawable/infrastructure"
+                android:textColor="@color/red" />
+
+            <EditText
+                android:id="@+id/transportations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/spacing_25dp"
+                android:hint="Transportation"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/spacing_10dp">
+
+            <ImageView
+                android:layout_width="@dimen/spacing_50dp"
+                android:layout_height="@dimen/spacing_50dp"
+                android:background="@drawable/grocery"
+                android:textColor="@color/red" />
+
+            <EditText
+                android:id="@+id/grocerry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/spacing_25dp"
+                android:hint="Grocerry"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/dismiss_e"
+                android:layout_width="@dimen/spacing_100dp"
+                android:layout_height="@dimen/spacing_50dp"
+                android:layout_margin="30dp"
+                android:text="Dismiss"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:backgroundTint="@color/red" />
+
+            <Button
+                android:id="@+id/add_details_e"
+                android:layout_width="100dp"
+                android:layout_height="@dimen/spacing_50dp"
+                android:layout_margin="30dp"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:backgroundTint="@color/colorPrimaryDark" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

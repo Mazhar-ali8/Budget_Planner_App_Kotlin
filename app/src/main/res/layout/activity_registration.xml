@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rv_parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.register_activity.RegistrationActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/applogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtRegistration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registration"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/spacing_30dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/profile_image_users"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/ic_money_bag" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_30dp"
+                android:layout_marginLeft="@dimen/spacing_30dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="@dimen/spacing_30dp"
+                android:layout_marginRight="@dimen/spacing_30dp"
+                android:background="@drawable/edit_texts_bg"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/UserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/ic_person"
+                    android:drawablePadding="@dimen/spacing_5dp"
+                    android:hint="Enter Your Name"
+                    android:inputType="text"
+                    android:padding="@dimen/spacing_5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_30dp"
+                android:layout_marginLeft="@dimen/spacing_30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="@dimen/spacing_30dp"
+                android:layout_marginRight="@dimen/spacing_30dp"
+                android:background="@drawable/edit_texts_bg"
+                android:orientation="vertical">
+
+
+                <RadioGroup
+                    android:id="@+id/radioGrp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp">
+
+                    <RadioButton
+                        android:id="@+id/radioM"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:drawableRight="@drawable/ic_male"
+                        android:text="Male"
+                        android:textSize="14dp" />
+
+                    <RadioButton
+                        android:id="@+id/radioF"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:drawableRight="@drawable/girl"
+                        android:text="Female"
+                        android:textSize="14dp" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_30dp"
+                android:layout_marginLeft="@dimen/spacing_30dp"
+                android:layout_marginTop="@dimen/spacing_5dp"
+                android:layout_marginEnd="@dimen/spacing_30dp"
+                android:layout_marginRight="@dimen/spacing_30dp"
+                android:background="@drawable/edit_texts_bg"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/email_et_r"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/ic_baseline_mark_email_unread_24"
+                    android:drawablePadding="@dimen/spacing_5dp"
+
+                    android:hint="@string/enter_your_number_email"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/spacing_5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_30dp"
+                android:layout_marginLeft="@dimen/spacing_30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="@dimen/spacing_30dp"
+                android:layout_marginRight="@dimen/spacing_30dp"
+                android:visibility="gone"
+                android:background="@drawable/edit_texts_bg"
+                android:orientation="vertical">
+
+
+                <RadioGroup
+                    android:id="@+id/radio_group_user_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp">
+
+                    <RadioButton
+                        android:id="@+id/customer_Rbtn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="Customer"
+                        android:textSize="14dp" />
+
+                    <RadioButton
+                        android:id="@+id/service_provider_Rbtn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="Service Provider"
+                        android:textSize="14dp" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_30dp"
+                android:layout_marginLeft="@dimen/spacing_30dp"
+                android:layout_marginTop="@dimen/spacing_5dp"
+                android:layout_marginEnd="@dimen/spacing_30dp"
+                android:layout_marginRight="@dimen/spacing_30dp"
+                android:background="@drawable/edit_texts_bg"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/password_et_r"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/ic_baseline_password_24"
+                    android:drawablePadding="@dimen/spacing_5dp"
+                    android:hint="Enter your password"
+
+                    android:inputType="textPassword"
+                    android:padding="@dimen/spacing_5dp"></EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_30dp"
+                android:layout_marginLeft="@dimen/spacing_30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="@dimen/spacing_30dp"
+                android:layout_marginRight="@dimen/spacing_30dp"
+                android:background="@drawable/edit_texts_bg"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/confirm_password_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/ic_baseline_password_24"
+                    android:drawablePadding="@dimen/spacing_5dp"
+                    android:hint="Confirm Your password"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/spacing_5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_30dp"
+                android:layout_marginLeft="@dimen/spacing_30dp"
+                android:layout_marginTop="@dimen/spacing_15dp"
+                android:layout_marginEnd="@dimen/spacing_30dp"
+                android:layout_marginRight="@dimen/spacing_30dp"
+                android:layout_marginBottom="@dimen/spacing_30dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/btn_register_"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/btn_signin_bg"
+                        android:text="Register"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+                <ProgressBar
+                    android:id="@+id/progressR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                </ProgressBar>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/sign_in_Btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rgtr_btn_stroke_bg"
+                        android:text="Sign In"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

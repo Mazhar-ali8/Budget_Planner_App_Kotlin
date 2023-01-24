@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Input All Your Incomes :"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/spacing_20dp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/spacing_10dp">
+
+            <ImageView
+                android:layout_width="@dimen/spacing_50dp"
+                android:layout_height="@dimen/spacing_50dp"
+                android:background="@drawable/salary"
+                android:textColor="@color/red" />
+
+            <EditText
+                android:id="@+id/salary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/spacing_25dp"
+                android:hint="Salary"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/spacing_10dp">
+
+            <ImageView
+                android:layout_width="@dimen/spacing_50dp"
+                android:layout_height="@dimen/spacing_50dp"
+                android:background="@drawable/save_money"
+                android:textColor="@color/red" />
+
+            <EditText
+                android:id="@+id/savings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/spacing_25dp"
+                android:hint="Savings"></EditText>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/spacing_10dp">
+
+            <ImageView
+                android:layout_width="@dimen/spacing_50dp"
+                android:layout_height="@dimen/spacing_50dp"
+                android:background="@drawable/investing"
+                android:textColor="@color/red" />
+
+            <EditText
+                android:id="@+id/investments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/spacing_25dp"
+                android:hint="Investments"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/spacing_10dp">
+
+            <ImageView
+                android:layout_width="@dimen/spacing_50dp"
+                android:layout_height="@dimen/spacing_50dp"
+                android:background="@drawable/knowledge"
+                android:textColor="@color/red" />
+
+            <EditText
+                android:id="@+id/general"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/spacing_25dp"
+                android:hint="General"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/dismiss"
+                android:layout_width="@dimen/spacing_100dp"
+                android:layout_height="@dimen/spacing_50dp"
+                android:layout_margin="30dp"
+                android:text="Dismiss"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:backgroundTint="@color/red" />
+
+            <Button
+                android:id="@+id/add_details"
+                android:layout_width="100dp"
+                android:layout_height="@dimen/spacing_50dp"
+                android:layout_margin="30dp"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:backgroundTint="@color/colorPrimaryDark" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

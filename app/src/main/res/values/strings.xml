@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Money Planner</string>
+    <string name="welcome_to_money_planner">Welcome to Money Planner</string>
+    <string name="enter_your_number_email">Enter your email</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="textregister_user"> wants to register</string>
+    <string name="no_user_request_found">No user Request found</string>
+    <string name="user_verification_status">User Verification Status</string>
+    <string name="forg0t_password">FORG0T PASSWORD</string>
+
+</resources>
